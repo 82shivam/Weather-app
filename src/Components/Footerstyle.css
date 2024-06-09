@@ -1,0 +1,28 @@
+/* footer  */
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top:auto;
+   
+    
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height:5rem ;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 1200px) {
+footer{
+    margin-top: 9rem;
+}
+}
+
+@media screen and (max-width: 643px) {
+    footer{
+        margin-top: 18rem;
+    }
+    }

@@ -1,0 +1,110 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+ 
+    background-color:black; 
+    display: inline;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+    background-color:black; 
+    margin: 0 auto;
+    padding: 20px 15px;
+
+  
+   
+  }
+  
+  .navbar .logo a {
+    font-size: 1.8rem;
+    font-weight:900;
+    text-decoration: none;
+    color: #fff;
+     font-family: "Poetsen One";
+  }
+
+  .navbar .logo a span{
+    color: rgb(255, 0, 149);
+    font-family: "Poetsen One";
+  }
+  
+  .navbar .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+  }
+  
+  .navbar .links a {
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease;
+  }
+  
+  .navbar .links a:hover {
+    color: #47b2e4;
+    
+  }
+  
+
+
+  
+/* Hamburger menu styles */
+#menu-toggle {
+    display: none;
+  }
+  
+  #hamburger-btn {
+    font-size: 1.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    order: 1;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .navbar .logo a {
+      font-size: 1.5rem;
+    }
+  
+    .links {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      width: 100%;
+      height: 100vh;
+      padding-top: 50px;
+       
+    background-color:black; 
+      flex-direction: column;
+      transition: 0.3s ease;
+    }
+  
+    .navbar #menu-toggle:checked ~ .links {
+      left: 0;
+    }
+  
+    .navbar #hamburger-btn {
+      display: block;
+    }
+  
+   
+}
+#carouselExampleRide{
+  margin-top: 5rem;
+}
